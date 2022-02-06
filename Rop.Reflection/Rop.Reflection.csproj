@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <Title>Rop.Reflection</Title>
+	  <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
+	  <PackageTags>helper-classes;extensions;reflection;cheat</PackageTags>
+	  <Description>Aditional helpers for reflection and cheat</Description>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <Version>1.0.1</Version>
+	  <Authors>Ramon Ordiales Plaza</Authors>
+	  <Company>Ramon Ordiales Plaza</Company>
+	  <Copyright>2022 Ramon Ordiales</Copyright>
+	  <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+	  <RepositoryUrl>https://api.nuget.org/v3/index.json</RepositoryUrl>
+	  <PackageProjectUrl>https://github.com/ramoneeza/Rop.Reflection</PackageProjectUrl>
+	  <PackageReadmeFile>Readme.md</PackageReadmeFile>
+	  <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Packs\**" />
+		<EmbeddedResource Remove="Packs\**" />
+		<None Remove="Packs\**" />
+		<None Include="..\Readme.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+
+</Project>
